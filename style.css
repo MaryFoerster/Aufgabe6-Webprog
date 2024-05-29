@@ -38,23 +38,43 @@ h1 {
   overflow: hidden;
   width: 300px;
 }
-
-.card-img {
+.card__img {
   width: 100%;
   height: auto;
 }
-
-.card-content {
+.card__content {
   padding: 1rem;
 }
-
-.card-title {
+.card__title {
   margin: 0 0 0.5rem 0;
   font-size: 2rem;
-  color: #3498db;
+  color: var(--color-blue);
 }
-
-.card-text {
+.card__text {
   margin: 0;
   font-size: 1.4rem;
+  color: var(--color-grey);
+}
+@media screen and (max-width:540px) {
+  
+  .card__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: var(--color-blue);
+  }
+  .card__text {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+@container and (min-width:540px) {
+  .card__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: var(--color-blue);
+  }
+  .card__text {
+    margin: 0;
+    font-size: 1rem;
+  }
 }
